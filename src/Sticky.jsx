@@ -152,7 +152,7 @@ class Sticky extends Component {
             y: outerY,
             bottomBoundary: this.getBottomBoundary(options.bottomBoundary),
             topBoundary: outerY
-        });
+        }, () => { this.update() });
     }
 
     handleResize (e, ae) {
